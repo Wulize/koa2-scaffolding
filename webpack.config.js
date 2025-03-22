@@ -26,9 +26,10 @@ module.exports = {
   mode: 'production', // 设置为生产模式
   devtool: 'source-map', // 生成 source map
   plugins: [
+    // 添加 BannerPlugin 插件，未添加之前shabang行打包的时候被干掉了，所以使用这个插件给它添加回去
     new webpack.BannerPlugin({
       banner: '#!/usr/bin/env node',
-      raw: true, // 保留原始格式
+      raw: true,
       entryOnly: true, // 仅在入口文件中添加
     }),
   ],
