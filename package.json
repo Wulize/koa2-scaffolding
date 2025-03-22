@@ -1,0 +1,28 @@
+{
+  "name": "koa2-scaffolding",
+  "version": "0.0.3",
+  "description": "A Koa2 project scaffolding tool",
+  "main": "dist/bundle.js",
+  "bin": {
+    "koa2": "./dist/bundle.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "koa": "^2.x.x",
+    "koa-bodyparser": "^4.x.x",
+    "koa-router": "^10.x.x",
+    "koa2-scaffolding": "^0.0.3"
+  },
+  "author": "wulize <lize.wu@foxmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "babel-loader": "^10.0.0",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1"
+  }
+}
